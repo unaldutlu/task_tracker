@@ -2,8 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .hello {
-    @apply font-bold flex justify-center items-center bg-amber-500 min-h-screen
-  }
+/* @layer components {} */
+
+.image {
+    background-image: url(./assets/image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: drop-shadow(16px 16px 20px red) contrast(100%);
 }
+
+.over::-webkit-scrollbar {
+    display: none;
+}
+    
