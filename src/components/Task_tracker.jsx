@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Button from "./Button";
+import Clock from "./Clock";
 import Contact from "./Contact";
 import Form from "./Form";
 import Header from "./Header";
@@ -39,6 +40,7 @@ function Task_tracker() {
         })}
       </div>
       <Contact/>
+      <Clock/>
     </div>
   );
 }
