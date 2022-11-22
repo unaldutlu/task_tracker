@@ -1,9 +1,10 @@
 import React from "react";
+import Task_tracker from "./components/Task_tracker";
 
 function App() {
   return (
-    <div>
-      <p className='hello'>Hello</p>
+    <div className='bg-cyan-500 min-h-screen flex justify-center items-center image'>
+      <Task_tracker />
     </div>
   );
 }
