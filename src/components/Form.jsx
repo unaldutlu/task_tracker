@@ -30,7 +30,10 @@ function Form({ addForm, setAddForm, isClick }) {
       {!isClick ? (
         <form onSubmit={onSubmit}>
           <div className='flex flex-col mt-4 justify-center items-center'>
-            <label htmlFor='task' className='text-center font-extrabold text-zinc-700 pb-[.1rem]'>
+            <label
+              htmlFor='task'
+              className='text-center font-extrabold text-zinc-700 pb-[.1rem]'
+            >
               Task
             </label>
             <input
@@ -45,18 +48,24 @@ function Form({ addForm, setAddForm, isClick }) {
             />
           </div>
           <div className='flex flex-col mt-4 justify-center items-center'>
-            <label htmlFor='date' className='text-center font-extrabold text-zinc-700 pb-[.1rem]'>
-              Day&Time
+            <label
+              htmlFor='date'
+              className='text-center font-extrabold text-zinc-700 pb-[.1rem]'
+            >
+              Date&Time
             </label>
             <input
               id='date'
               className='w-4/6 p-1 rounded-xl border-none outline-none px-4 shadow-lg focus:shadow-orange-700 text-gray-400 focus:text-black cursor-pointer date'
               autoComplete='off'
-              type={"datetime-local"}
+              type={"text"}
               name='date'
+              placeholder='Add Date&Time'
               value={form.date}
               required
               onChange={onChangeInput}
+              onFocus={(e) => (e.target.type = "datetime-local")}
+              onBlur={(e) => (e.target.type = "text")}
             />
           </div>
           <div className='flex justify-center mt-3'>
