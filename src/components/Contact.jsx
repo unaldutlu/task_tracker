@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
       <ul>
-        <li className='w-[160px] h-[60px] flex justify-around items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
+        <li className='w-[160px] h-[60px] flex justify-around items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500'>
           <a
             className='flex justify-around items-center w-full text-gray-300'
             href='https://www.linkedin.com/in/unaldutlu/'
@@ -15,7 +15,7 @@ const Navbar = () => {
             Linkedin <FaLinkedin size={30} />
           </a>
         </li>
-        <li className='w-[160px] h-[60px] flex justify-around items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
+        <li className='w-[160px] h-[60px] flex justify-around items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-700'>
           <a
             className='flex justify-around items-center w-full text-gray-300'
             href='https://github.com/unaldutlu'
@@ -23,7 +23,7 @@ const Navbar = () => {
             Github <FaGithub size={30} />
           </a>
         </li>
-        <li className='w-[160px] h-[60px] flex justify-around items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
+        <li className='w-[160px] h-[60px] flex justify-around items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-600'>
           <a
             className='flex justify-around items-center w-full text-gray-300'
             href='https://mail.google.com/mail/u/0/?hl=tr&tf=cm&fs=1&to=unaldutlu@gmail.com'
