@@ -19,7 +19,9 @@ function List({ task, date, i, addForm, setAddForm }) {
       onClick={handleComplete}
     >
       <div style={{ textDecoration: isComplete ? "line-through" : "" }}>
-        <div className='text-black font-bold text-xl'>{task}</div>
+        <div className='text-black font-bold text-xl w-[26rem] break-words'>
+          {task}
+        </div>
         <div className='text-black text-lg'>{date}</div>
       </div>
       <div className='flex items-center'>
