@@ -30,12 +30,12 @@ function Form({ addForm, setAddForm, isClick }) {
       {!isClick ? (
         <form onSubmit={onSubmit}>
           <div className='flex flex-col mt-4 justify-center items-center'>
-            <label htmlFor='task' className='text-center font-bold italic'>
+            <label htmlFor='task' className='text-center font-extrabold text-zinc-700 pb-[.1rem]'>
               Task
             </label>
             <input
               id='task'
-              className='w-4/6 p-1 rounded-xl border-none outline-none px-4'
+              className='w-4/6 p-1 rounded-xl border-none shadow-lg outline-none px-4 focus:shadow-orange-700'
               autoComplete='off'
               name='task'
               placeholder='Add Task'
@@ -45,12 +45,12 @@ function Form({ addForm, setAddForm, isClick }) {
             />
           </div>
           <div className='flex flex-col mt-4 justify-center items-center'>
-            <label htmlFor='date' className='text-center font-bold italic'>
+            <label htmlFor='date' className='text-center font-extrabold text-zinc-700 pb-[.1rem]'>
               Day&Time
             </label>
             <input
               id='date'
-              className='w-4/6 p-1 rounded-xl border-none outline-none px-4'
+              className='w-4/6 p-1 rounded-xl border-none outline-none px-4 shadow-lg focus:shadow-orange-700 text-gray-400 focus:text-black cursor-pointer'
               autoComplete='off'
               type={"datetime-local"}
               name='date'

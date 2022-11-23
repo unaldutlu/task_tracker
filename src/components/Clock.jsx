@@ -2,7 +2,7 @@ import React from "react";
 
 function Clock() {
   return (
-    <div className='hidden lg:flex fixed flex-col top-[40%] right-28 group'>
+    <div className='hidden lg:flex fixed flex-col top-[40%] right-28 group cursor-pointer'>
       <div className='relative flex items-center justify-end w-32 h-32 overflow-hidden bg-gray-900 rounded-full '>
         <div className='absolute w-1/2 h-1 bg-gradient-to-t from-white to-red-400 rounded-full origin-left -rotate-[70deg] group-hover:rotate-[300deg] duration-1000 ease-in-out' />
 
