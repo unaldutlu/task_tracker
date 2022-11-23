@@ -15,7 +15,7 @@ function Task_tracker() {
   };
 
   return (
-    <div className='w-[33rem] h-[33rem] bg-slate-600 rounded-xl bg-opacity-[.4]'>
+    <div className='w-[92%] sm:w-[72%] lg:w-[36%] h-[33rem] m-5 bg-slate-600 rounded-xl bg-opacity-[.4]'>
       <Header />
       <Button handleClick={handleClick} isClick={isClick} />
       <Form addForm={addForm} setAddForm={setAddForm} isClick={isClick} />
@@ -42,8 +42,8 @@ function Task_tracker() {
             })}
           </div>
         ) : (
-          <div className="text-center text-yellow-400 m-20 shadow-xl">
-            <p className="font-bold text-2xl italic">No Task to Show</p>
+          <div className=' text-center text-yellow-400 m-20 shadow-xl'>
+            <p className='font-bold text-2xl italic'>No Task to Show</p>
           </div>
         )}
       </div>

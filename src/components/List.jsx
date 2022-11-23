@@ -18,11 +18,11 @@ function List({ task, date, i, addForm, setAddForm }) {
       className='flex justify-between m-2 border-2 border-orange-700 py-2 px-5 rounded-lg bg-amber-300 bg-opacity-[.5]'
       onClick={handleComplete}
     >
-      <div style={{ textDecoration: isComplete ? "line-through" : "" }}>
-        <div className='text-black font-bold text-xl w-[26rem] break-words'>
-          {task}
+      <div className="w-[90%]" style={{ textDecoration: isComplete ? "line-through" : "" }}>
+        <div className='text-black font-bold text-xl break-words family'>
+          <span className="text-red-900 text-xl">{i+1}.</span> {task}
         </div>
-        <div className='text-black text-lg'>{date}</div>
+        <div className='text-black text-lg d_family'>{date}</div>
       </div>
       <div className='flex items-center'>
         <button onClick={() => deleteHandler(i)}>
