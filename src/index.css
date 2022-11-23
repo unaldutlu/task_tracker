@@ -15,10 +15,16 @@
 .over::-webkit-scrollbar {
     display: none;
 }
-    
-.family{
+
+.family {
     font-family: 'PT Serif', serif;
 }
-.d_family{
+
+.d_family {
     font-family: 'Pacifico', cursive;
+}
+
+.date {
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
