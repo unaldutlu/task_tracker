@@ -50,7 +50,7 @@ function Form({ addForm, setAddForm, isClick }) {
             </label>
             <input
               id='date'
-              className='w-4/6 p-1 rounded-xl border-none outline-none px-4 shadow-lg focus:shadow-orange-700 text-gray-400 focus:text-black cursor-pointer'
+              className='w-4/6 p-1 rounded-xl border-none outline-none px-4 shadow-lg focus:shadow-orange-700 text-gray-400 focus:text-black cursor-pointer date'
               autoComplete='off'
               type={"datetime-local"}
               name='date'
