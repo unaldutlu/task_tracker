@@ -15,7 +15,7 @@ function Task_tracker() {
   };
 
   return (
-    <div className='w-[92%] sm:w-[72%] lg:w-[36%] h-[33rem] m-5 bg-slate-600 rounded-xl bg-opacity-[.4]'>
+    <div className='w-[92%] sm:w-[72%] lg:w-[36%] min-[1600px]:w-[28%] h-[33rem] m-5 bg-slate-600 rounded-xl bg-opacity-[.4]'>
       <Header />
       <Button handleClick={handleClick} isClick={isClick} />
       <Form addForm={addForm} setAddForm={setAddForm} isClick={isClick} />
